@@ -8,6 +8,7 @@ $(function () {
         dataType: 'json',
         success: function (result) {
             console.log(result);
+            console.log(23);
         }
     })
 })
