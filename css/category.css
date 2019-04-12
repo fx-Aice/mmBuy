@@ -115,50 +115,19 @@
   border-radius: 5px;
   color: #333;
 }
-.brandProList {
-  width: 100%;
+.categoryList {
+  background-color: #ededed;
 }
-.brandProList .mui-table-view-cell a {
-  width: 100%;
-  overflow: hidden;
+.categoryList .mui-collapse-content {
+  padding: 0!important;
 }
-.brandProList .mui-table-view-cell a .left {
-  width: 30%;
-  float: left;
-}
-.brandProList .mui-table-view-cell a .left img {
-  width: 80%;
-  display: block;
-}
-.brandProList .mui-table-view-cell a .right {
-  width: 70%;
-  float: left;
-  position: relative;
-}
-.brandProList .mui-table-view-cell a .right .proName {
-  font-size: 14px;
-}
-.brandProList .mui-table-view-cell a .right .proPrice {
-  font-size: 16px;
-  color: #f00;
-  font-weight: 600;
-  margin-top: 10px;
-}
-.brandProList .mui-table-view-cell a .right .star {
-  position: absolute;
-  right: 0;
-  bottom: 35px;
-  font-size: 20px;
-  color: #ff841d;
-}
-.brandProList .mui-table-view-cell a .right .comment {
-  padding: 5px 5px;
-}
-.brandProList .mui-table-view-cell a .right .comment span {
-  font-size: 11px;
-  color: #999;
-}
-.mui-pager {
-  display: flex;
+.categoryList .mui-collapse-content .mui-row div {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
   text-align: center;
+}
+.categoryList .mui-collapse-content .mui-row div a {
+  color: #333;
+  font-size: 14px;
 }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../css/category.css">
+    <title>慢慢买</title>
+</head>
+
+<body class="brandTitle">
+    <div class="layout">
+        <!-- 顶部logo和搜索 -->
+        <header>
+            <div class="logo">
+                <div>
+                    <img src="../images/header_logo.png" alt="">
+                </div>
+                <div>
+                    <img src="../images/header_app.png" alt="">
+                </div>
+            </div>
+
+            <div class="search">
+                <input type="search" placeholder="请输入您想要比价的商品">
+                <button>搜索</button>
+            </div>
+        </header>
+        <div class="content">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!--这里放置真实显示的DOM内容-->
+                    <!-- 所在位置 -->
+                    <nav>
+                        <a href="../index.html">首页</a>
+                        <span class="mui-icon mui-icon-arrowright"></span>
+                        <a href="./brandTitle.html">全部分类</a>
+                        <span class="mui-icon mui-icon-arrowright"></span>
+                        <a href="">品牌大全</a>
+                    </nav>
+                    <ul class="mui-table-view cate">
+                       
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+<!-- 分类列表模板 -->
+<script type="text/template" id="categoryTemp">
+    {{each result value index}}
+        <div class="mui-col-xs-4"> <a href="{{value.categoryId}}">{{value.category}}</a></div>
+    {{/each}}
+</script>
+<!-- 分类标题模板 -->
+<script type="text/template" id="categoryTitleTemp">
+{{each result value index}}
+<li class="mui-table-view-cell mui-collapse categoryList">
+        <a class="mui-navigate-right" href="#" data-id="{{value.titleId}}">{{value.title}} </a>
+        <div class="mui-collapse-content">
+            <div class="mui-row care{{value.titleId}}">
+                <div class="mui-col-xs-4"> <a href="">电视</a></div>
+            </div>
+        </div>
+    </li>
+{{/each}}
+</script>
+<script src="../lib/zepto/zepto.js"></script>
+<script src="../lib/mui/js/mui.min.js"></script>
+<script src="../lib/arttemplate/template-web.js"></script>
+<script src="../js/category.js"></script>

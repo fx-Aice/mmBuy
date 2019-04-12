@@ -1,0 +1,238 @@
+.layout {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        width: 100%;
+        height: 44px;
+
+        >header {
+            width: 100%;
+            background-color: #F4483E;
+
+
+            h1,
+            a,
+            div {
+                color: #fff;
+            }
+
+            >a {
+                display: flex;
+                flex-direction: column;
+                font-size: 4px;
+
+                >.mui-icon {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 26px;
+                    text-align: center;
+                }
+            }
+
+            >a:nth-of-type(1) {
+                font-size: 25px;
+            }
+
+        }
+    }
+
+    >.content {
+        flex: 1;
+        padding-top: 30px;
+        position: relative;
+
+        .menu_nav {
+            width: 100%;
+            background-color: #fff;
+            position: fixed;
+            left: 0;
+            z-index: 10;
+
+            >ul {
+                clear: both;
+                overflow: hidden;
+                padding: 0;
+
+                >li {
+                    padding: 10px;
+                    float: left;
+
+                    >a {
+                        padding: 10px 0;
+                        color: #000000;
+                    }
+
+                    >a.active {
+                        border-bottom: 2px solid #F4483E;
+                    }
+
+                    >a:focus {
+                        border-bottom: 2px solid #F4483E;
+                    }
+                }
+
+
+            }
+        }
+
+        .pro_list {
+            width: 100%;
+            margin-top: 55px;
+            padding-bottom: 55px;
+
+            >.pro_shop {
+                width: 100%;
+                background-color: #fff;
+                display: flex;
+                padding: 10px 10px 10px 5px;
+                margin-top: 10px;
+
+                >.imgBox {
+                    flex: 1;
+
+                    >a {
+                        display: block;
+                        width: 100%;
+
+                        >img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                >.contentBox {
+                    flex: 2;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    margin-left: 10px;
+
+                    >div:nth-of-type(1) {
+                        font-size: 16px;
+                    }
+
+                    >div:nth-of-type(2) {
+                        color: #f00;
+                        font-size: 20px;
+
+                        >i {
+                            font-style: normal;
+                            font-size: 15px
+                        }
+
+                        >em {
+                            font-size: 15px;
+                            margin-left: 5px;
+                            ;
+                        }
+
+                        >del {
+                            margin-left: 5px;
+                            color: #ccc;
+                            font-size: 15px
+                        }
+                    }
+
+                    >div:nth-of-type(3) {
+                        >div {
+                            margin-bottom: -2px;
+                            position: relative;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: 110px;
+                            height: 15px;
+                            border-radius: 10px;
+                            background-color: #FFB7B7;
+                            border: 1px solid #f00;
+                            text-align: center;
+                            color: #fff;
+                            line-height: 15px;
+                            font-size: 14px;
+                            font-weight: 700;
+
+                            >div {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 5%;
+                                height: 15px;
+                                background-color: #f00;
+                            }
+                        }
+
+                        >span {
+                            font-size: 14px;
+                            margin-left: 10px;
+                            color: #f00;
+                        }
+                    }
+
+                    >div:nth-of-type(4) {
+                        display: flex;
+                        justify-content: space-between;
+
+                        >a {
+                            padding: 5px;
+                            display: inline- block;
+                            font-size: 14px;
+                            color: #f00;
+                            border: 1px dashed #f00;
+                        }
+
+                        >button {
+                            >a {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    >.footer {
+        width: 100%;
+        height: 44px;
+        background-color: #eee;
+        position: fixed;
+        bottom: 0px;
+        left: 0;
+        z-index: 10;
+
+        >ul {
+            clear: both;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+
+            >li {
+                width: 33.33%;
+                float: left;
+
+                >a {
+                    text-align: center;
+                    height: 44px;
+                    line-height: 44px;
+                    display: block;
+                    color: #000;
+
+                    >span {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            >li:nth-of-type(2) {
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+            }
+        }
+    }
+
+
+}

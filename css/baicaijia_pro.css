@@ -1,0 +1,134 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.layout .header {
+  width: 100%;
+  height: 44px;
+}
+.layout .header > header {
+  width: 100%;
+  background-color: #F4483E;
+}
+.layout .header > header h1,
+.layout .header > header a,
+.layout .header > header div {
+  color: #fff;
+}
+.layout .header > header > a {
+  display: flex;
+  flex-direction: column;
+  font-size: 4px;
+}
+.layout .header > header > a > .mui-icon {
+  margin: 0;
+  padding: 0;
+  font-size: 26px;
+  text-align: center;
+}
+.layout .header > header > a:nth-of-type(1) {
+  font-size: 25px;
+}
+.layout > .content {
+  flex: 1;
+  padding-top: 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.layout > .content .pro_xiangqing {
+  overflow: scroll;
+}
+.layout > .content .pro_xiangqing .pro_title {
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+}
+.layout > .content .pro_xiangqing .pro_img {
+  text-align: center;
+  padding: 20px;
+}
+.layout > .content .pro_xiangqing .pingjia > .tiltle {
+  height: 44px;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 44px;
+}
+.layout > .content .pro_xiangqing .pingjia .content {
+  padding: 20px 10px;
+  border-bottom: 1px solid #ccc;
+}
+.layout > .content .pro_xiangqing .pingjia .content .nav {
+  display: flex;
+  justify-content: space-between;
+}
+.layout > .content .pro_xiangqing .pingjia .content .nav .left {
+  font-size: 13px;
+  color: #666;
+}
+.layout > .content .pro_xiangqing .pingjia .content .nav .right {
+  font-size: 13px;
+  color: #666;
+  text-align: right;
+}
+.layout > .content .pro_xiangqing .pingjia .content .wenzi {
+  margin-top: 5px;
+  font-size: 14px;
+  text-indent: 2em;
+}
+.layout > .content .pro_xiangqing table {
+  margin: 10px 0;
+}
+.layout > .content .pro_xiangqing .mui-content {
+  background-color: #FCC11E;
+}
+.layout > .content .pro_xiangqing .mui-content .mui-segmented-control {
+  border: 1px solid #DC6E09;
+}
+.layout > .content .pro_xiangqing .mui-content .mui-segmented-control .mui-control-item {
+  border-left: 1px solid #DC6E09;
+  color: #fff;
+}
+.layout > .content .pro_xiangqing .mui-content .mui-segmented-control .mui-control-item:nth-of-type(1) {
+  border-left: none;
+}
+.layout > .content .pro_xiangqing .mui-content .mui-segmented-control .mui-control-item.mui-active {
+  background-color: #FF970E;
+}
+.layout > .footer {
+  width: 100%;
+  height: 44px;
+  background-color: #eee;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  z-index: 10;
+}
+.layout > .footer > ul {
+  clear: both;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.layout > .footer > ul > li {
+  width: 33.33%;
+  float: left;
+}
+.layout > .footer > ul > li > a {
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  display: block;
+  color: #000;
+}
+.layout > .footer > ul > li > a > span {
+  font-weight: 700;
+}
+.layout > .footer > ul > li:nth-of-type(2) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
