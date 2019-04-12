@@ -56,7 +56,7 @@
   flex: 1;
 }
 .layout .content .mui-scroll-wrapper {
-  padding: 110px 0;
+  padding-top: 110px;
 }
 .layout .content .mui-scroll-wrapper nav {
   padding: 10px;
@@ -161,4 +161,13 @@
 .mui-pager {
   display: flex;
   text-align: center;
+  justify-content: space-around;
+}
+.mui-pager li select {
+  border: 1px solid #ccc;
+  height: 36px;
+  font-size: 12px;
+}
+.mui-pager li select option {
+  padding: 0;
 }

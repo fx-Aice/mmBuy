@@ -37,9 +37,8 @@
                     <nav>
                         <a href="../index.html">首页</a>
                         <span class="mui-icon mui-icon-arrowright"></span>
-                        <a href="./brandTitle.html">全部分类</a>
-                        <span class="mui-icon mui-icon-arrowright"></span>
-                        <a href="">品牌大全</a>
+                        <a href="./brandTitle.html">比价搜索</a>
+                       
                     </nav>
                     <ul class="mui-table-view cate">
                        
@@ -56,7 +55,7 @@
 <!-- 分类列表模板 -->
 <script type="text/template" id="categoryTemp">
     {{each result value index}}
-        <div class="mui-col-xs-4"> <a href="{{value.categoryId}}">{{value.category}}</a></div>
+        <div class="mui-col-xs-4"> <a href="./productList.html?categoryid={{value.categoryId}}">{{value.category}}</a></div>
     {{/each}}
 </script>
 <!-- 分类标题模板 -->

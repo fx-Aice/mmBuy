@@ -56,7 +56,7 @@
   flex: 1;
 }
 .layout .content .mui-scroll-wrapper {
-  padding: 110px 0;
+  padding-top: 110px;
 }
 .layout .content .mui-scroll-wrapper nav {
   padding: 10px;
