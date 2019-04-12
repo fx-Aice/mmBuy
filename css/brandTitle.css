@@ -1,0 +1,151 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.layout header {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+.layout header .logo {
+  height: 50px;
+  background-color: #ff841d;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+.layout header .logo div:nth-of-type(1) {
+  flex: 6;
+}
+.layout header .logo div:nth-of-type(2) {
+  flex: 1;
+}
+.layout header .logo div img {
+  display: block;
+  width: 70%;
+}
+.layout header .search {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  align-items: center;
+}
+.layout header .search input {
+  padding: 0;
+  margin: 0;
+  flex: 5;
+  border-radius: 20px;
+  height: 35px;
+  margin-right: 10px;
+}
+.layout header .search button {
+  flex: 1;
+  height: 35px;
+  padding: 0;
+  border: none;
+  padding: 0 5px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #ff841d;
+}
+.layout .content {
+  flex: 1;
+}
+.layout .content .mui-scroll-wrapper {
+  padding: 110px 0;
+}
+.layout .content .mui-scroll-wrapper nav {
+  padding: 10px;
+  background-color: #ededed;
+}
+.layout .content .mui-scroll-wrapper nav a {
+  color: #333;
+}
+.layout .content .mui-scroll-wrapper .title {
+  color: #8e5215;
+  margin-top: 10px;
+  background-color: #ededed;
+  padding: 15px;
+}
+.layout .content .mui-scroll-wrapper .mui-table-view li {
+  background-color: #ededed;
+}
+.layout .content .mui-scroll-wrapper .mui-table-view li a {
+  color: #000;
+  font-size: 16px;
+}
+.layout .content .mui-scroll-wrapper .mui-table-view li a:after {
+  content: '\e581';
+}
+.layout .content .mui-scroll-wrapper .brandDetail li a {
+  padding-left: 40px;
+}
+.layout .content .mui-scroll-wrapper .brandDetail li a:after {
+  content: '\e583';
+}
+.layout .content .mui-scroll-wrapper .brandDetail li a span {
+  display: block;
+}
+.layout .content .mui-scroll-wrapper .brandDetail li a span:nth-of-type(1) {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  text-align: center;
+  left: 10px;
+  background-color: #c9c9c9;
+}
+.layout .content .mui-scroll-wrapper .brandDetail li a span:nth-of-type(2) {
+  font-size: 16px;
+}
+.layout .content .mui-scroll-wrapper .brandDetail li a div {
+  font-size: 12px;
+  color: #999;
+}
+.layout footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9;
+}
+.layout footer .app-promotion-bar {
+  height: 100px;
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
+  align-items: center;
+}
+.layout footer .app-promotion-bar .mui-icon-close {
+  position: absolute;
+  top: -8px;
+  right: 0;
+  font-size: 26px;
+  background-color: #bbb;
+  border-radius: 50%;
+  color: #fff;
+}
+.layout footer .app-promotion-bar .pic {
+  flex: 2;
+}
+.layout footer .app-promotion-bar .pic img {
+  width: 100%;
+}
+.layout footer .app-promotion-bar .dec {
+  padding: 0 15px;
+  flex: 4;
+}
+.layout footer .app-promotion-bar .dec p {
+  font-size: 16px;
+}
+.layout footer .app-promotion-bar .download-btn {
+  flex: 2;
+  display: block;
+  padding: 10px;
+  background-color: #ff841d;
+  text-align: center;
+  border-radius: 5px;
+  color: #333;
+}

@@ -38,12 +38,12 @@
                         <span class="mui-icon mui-icon-arrowright"></span>
                         <a href="#">全部分类</a>
                     </nav>
-                    <div class="title">热门品牌排行</div>
-                    <ul class="mui-table-view brandLists">
+                    <div class="title">三门冰箱哪个好?十大排行榜</div>
+                    <ul class="mui-table-view brandDetail">
+
                     </ul>
                 </div>
             </div>
-
         </div>
         <footer>
             <div class="app-promotion-bar">
@@ -57,18 +57,30 @@
             </div>
         </footer>
     </div>
-
 </body>
 
 </html>
-<script type="text/template" id="brandListsTemp">
+<script type="text/template" id="brandDetailTemp">
     {{each result value index}}
     <li class="mui-table-view-cell">
-            <a href="./brandDetail.html?brandtitleid={{value.brandTitleId}}" data-id="{{value.brandTitleId}}" class="mui-navigate-right">{{value.brandTitle}}</a>
+            <a href="./brandProList.html?brandtitleid={{value.brandtitleid}}" class="mui-navigate-right">
+                {{if index == 0}}
+                    <span style="background-color: #f00;">{{index+1}}</span>
+                {{else if index == 1}}
+                    <span  style="background-color: #ff9314;">{{index+1}}</span>
+                {{else if index == 2}}
+                    <span  style="background-color: #8adf5b;">{{index+1}}</span>
+                    {{else}}
+                    <span>{{index+1}}</span>
+                {{/if}}
+                <span>{{value.brandName}}</span>
+                <div>{{value.brandInfo}}</div>
+            </a>
     </li>
     {{/each}}
 </script>
 <script src="../lib/zepto/zepto.js"></script>
 <script src="../lib/mui/js/mui.min.js"></script>
 <script src="../lib/arttemplate/template-web.js"></script>
-<script src="../js/brandTitle.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/brandDetail.js"></script>
