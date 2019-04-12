@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>白菜价-淘宝内部卷</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../lib/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/baicaijia.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="header">
+            <header id="header" class="mui-bar mui-bar-nav">
+                <h1 class="mui-title">白菜价-淘宝内部卷</h1>
+                <a href="#" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+                <a class="mui-pull-right">
+                    <span class="mui-icon mui-icon-download"></span>
+                    下载APP
+                </a>
+
+            </header>
+        </div>
+        <div class="content">
+            <div class="mui-scroll-wrapper" style="height: 75px;">
+                <div class="mui-scroll menu_nav">
+
+                </div>
+            </div>
+
+            <div class="mui-scroll-wrapper-two">
+                <div class="mui-scroll">
+                    <div class="pro_list">
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <ul>
+                <li><a href="#">登陆</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#"><span class="mui-icon mui-icon-arrowthinup"></span>返回顶部</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+    <script type="text/template" id="menuNav">
+        <ul>
+            {{each result value index}}
+            <li><a class="{{index==0?'active':''}}" data-titleid = "{{value.titleId}}" href="#">{{value.title}}</a></li>
+            {{/each}}
+        </ul>
+    </script>
+    <script type="text/template" id="pro_list">
+        {{each result value index}}
+    <div class="pro_shop">
+        <div class="imgBox">
+            <a href="/pages/baicaijia_pro.html?productid={{value.productId}}" >
+                {{@value.productImg}}
+            </a>
+        </div>
+        <div class="contentBox">
+            <div>{{@value.productName}}</div>
+            <div>{{@value.productPrice}}</div>
+            <div>
+                    <div>1%<div></div>
+                    </div><span>已领28张</span>
+                </div>
+            <div>{{@value.productCoupon}}
+                <button type="button"  class="mui-btn mui-btn-danger">{{@value.productHref}}</button></div>
+        </div>
+
+    </div>
+    {{/each}}
+    
+    </script>
+
+
+
+
+    <script src="../lib/mui/js/mui.min.js"></script>
+    <script src="../lib/zepto/zepto.js"></script>
+    <script src="../lib/arttemplate/template-web.js"></script>
+    <script src="../js/baicaijia.js"></script>
+</body>
+
+</html>
