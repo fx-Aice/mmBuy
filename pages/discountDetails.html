@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/mui/css/mui.css">
+    <link rel="stylesheet" href="../lib/mui/fonts/mui.ttf">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/discountDetails.css">
+    <title>商品折扣详情</title>
+</head>
+
+<body>
+    <div class="layout">
+        <header id="header" class="mui-bar mui-bar-nav">
+            <h1 class="mui-title">国内折扣</h1>
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:;"></a>
+            <a class="mui-icon mui-icon-download mui-pull-right" href="javascript:;"></a>
+        </header>
+      
+
+        
+            <div class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                                <div class="center">
+                            <!--这里放置真实显示的DOM内容-->
+                        </div>
+                    </div>
+           
+        </div>
+
+
+        <div class="footer">
+            <div>
+                    <a href="#"><div>登录</div></a>
+                    <a href="#"><div>注册</div></a>
+                    <a href="#"><div><span calss=""></span> <img src="../images/top.jpg" alt="">返回顶部</div></a>
+            </div>
+            <div>
+                <span>手机App下载</span> <span>慢慢买手机版</span> <span>--掌上比价平台</span>
+                <p>manmanbuy.com</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script type='text/template' id='detailsTemp'>
+    {{each result value index}}
+    <div class="mui-slider banner">
+            <div class="mui-slider-group mui-slider-loop">
+                <!--支持循环，需要重复图片节点-->
+                <div class="mui-slider-item mui-slider-item-duplicate"><a href="#">{{@value.productImg}}</a>
+                </div>
+                <div class="mui-slider-item"><a href="#">{{@value.productImg}}</a>
+                </div>
+                <!--支持循环，需要重复图片节点-->
+                <div class="mui-slider-item mui-slider-item-duplicate"><a href="#">{{@value.productImg}}</a>
+                </div>
+            </div>
+        </div>
+        <div class="details_goods">
+            <div class="details_txt">{{value.productName}}</div>
+            <div class="details_price">￥{{value.productPrice}}</div>
+            <button>前往购买</button>
+            <div class="details_time "><span>{{value.productFrom}} | </span><span>{{value.productTime}}</span></div>
+            <div class="details_des">★ {{value.productInfo}}</div>
+
+            <div class="qr"><img src="../images/mmbweixin2.png" alt=""></div>
+            <div class="comment">{{@value.productComment}}</div>
+        </div>
+        {{/each}}
+    </script>
+
+<script src="../lib/arttemplate/template-web.js"></script>
+<script src="../lib/mui/js/mui.js"></script>
+<script src="../lib/iscroll/iscroll.js"></script>
+<script src="../lib/zepto/zepto.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/discountDetails.js"></script>
+
+</html>
