@@ -13,6 +13,7 @@
 
 <body class="brandTitle">
     <div class="layout">
+        <!-- 顶部logo和搜索 -->
         <header>
             <div class="logo">
                 <div>
@@ -34,9 +35,11 @@
                     <!--这里放置真实显示的DOM内容-->
                     <!-- 所在位置 -->
                     <nav>
-                        <a href="#">首页</a>
+                        <a href="../index.html">首页</a>
                         <span class="mui-icon mui-icon-arrowright"></span>
-                        <a href="#">全部分类</a>
+                        <a href="./brandTitle.html">全部分类</a>
+                        <span class="mui-icon mui-icon-arrowright"></span>
+                        <a href="">品牌大全</a>
                     </nav>
                     <div class="title">热门品牌排行</div>
                     <ul class="mui-table-view brandLists">
@@ -45,6 +48,8 @@
             </div>
 
         </div>
+        <!-- 底部广告弹窗 -->
+
         <footer>
             <div class="app-promotion-bar">
                 <a class="mui-icon mui-icon-close closeBtn" href="javascript:;"></a>
@@ -61,6 +66,7 @@
 </body>
 
 </html>
+<!-- 品牌大全标题模板 -->
 <script type="text/template" id="brandListsTemp">
     {{each result value index}}
     <li class="mui-table-view-cell">
