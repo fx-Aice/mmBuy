@@ -71,40 +71,6 @@
   background-color: #ededed;
   padding: 15px;
 }
-.layout .content .mui-scroll-wrapper .mui-table-view li {
-  background-color: #ededed;
-}
-.layout .content .mui-scroll-wrapper .mui-table-view li a {
-  color: #000;
-  font-size: 16px;
-}
-.layout .content .mui-scroll-wrapper .mui-table-view li a:after {
-  content: '\e581';
-}
-.layout .content .mui-scroll-wrapper .brandDetail li a {
-  padding-left: 40px;
-}
-.layout .content .mui-scroll-wrapper .brandDetail li a:after {
-  content: '\e583';
-}
-.layout .content .mui-scroll-wrapper .brandDetail li a span {
-  display: block;
-}
-.layout .content .mui-scroll-wrapper .brandDetail li a span:nth-of-type(1) {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  text-align: center;
-  left: 10px;
-  background-color: #c9c9c9;
-}
-.layout .content .mui-scroll-wrapper .brandDetail li a span:nth-of-type(2) {
-  font-size: 16px;
-}
-.layout .content .mui-scroll-wrapper .brandDetail li a div {
-  font-size: 12px;
-  color: #999;
-}
 .layout footer {
   position: fixed;
   bottom: 0;
@@ -148,4 +114,47 @@
   text-align: center;
   border-radius: 5px;
   color: #333;
+}
+.brandProList {
+  width: 100%;
+}
+.brandProList .mui-table-view-cell a {
+  width: 100%;
+  overflow: hidden;
+}
+.brandProList .mui-table-view-cell a .left {
+  width: 30%;
+  float: left;
+}
+.brandProList .mui-table-view-cell a .left img {
+  width: 80%;
+  display: block;
+}
+.brandProList .mui-table-view-cell a .right {
+  width: 70%;
+  float: left;
+  position: relative;
+}
+.brandProList .mui-table-view-cell a .right .proName {
+  font-size: 14px;
+}
+.brandProList .mui-table-view-cell a .right .proPrice {
+  font-size: 16px;
+  color: #f00;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.brandProList .mui-table-view-cell a .right .star {
+  position: absolute;
+  right: 0;
+  bottom: 35px;
+  font-size: 20px;
+  color: #ff841d;
+}
+.brandProList .mui-table-view-cell a .right .comment {
+  padding: 5px 5px;
+}
+.brandProList .mui-table-view-cell a .right .comment span {
+  font-size: 11px;
+  color: #999;
 }
