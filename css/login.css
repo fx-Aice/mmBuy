@@ -1,0 +1,199 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header_top {
+  margin: 0 auto;
+  background: #fff;
+  height: 85px;
+  position: relative;
+  z-index: 100;
+}
+
+.header_top .header_inner.fixed {
+  height: 85px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header_top .header_box {
+  position: relative;
+  padding: 9px 10px;
+  height: 44px;
+  overflow: hidden;
+  background-color: #fff;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+}
+
+.header_top .header_box .logo {
+  float: left;
+  margin-top: 1px;
+  height: 25px;
+  width: 27%;
+  margin-left: 0px;
+}
+
+.header_top .header_box .logo img {
+  max-width: 100%;
+  max-height: 24px;
+  width: auto;
+  display: block;
+}
+
+.header_top .header_box .searchbox {
+  position: relative;
+  float: left;
+  margin-left: 7px;
+  margin-top: -2px;
+  height: 30px;
+  line-height: 30px;
+  width: 58%;
+  border-radius: 100px;
+  background-color: #f9f9f9;
+}
+
+.searchbox input {
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  width: 77%;
+  font-size: 14px;
+  color: #333;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 4px;
+  height: 28px;
+  line-height: 28px;
+  background-color: #f9f9f9;
+}
+
+.searchbox input:hover,
+.searchbox input:active,
+.searchbox input:focus {
+  outline: none;
+}
+
+.searchbox .fa {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  color: #c8c8c8;
+  top: 0;
+  left: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.download {
+  margin-top: 2px;
+  float: right;
+  border: 1px solid #f04848;
+  height: 20px;
+  border-radius: 20px;
+  line-height: 20px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.download a {
+  color: #f85000;
+}
+
+a:focus,
+a:active,
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*清除浮动*/
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+.tabs-parent {
+  width: 100%;
+}
+
+.tabs-parent .nav-tabs {
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+}
+
+.tabs-parent .nav-tabs > li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 3px;
+}
+
+.tabs-parent .nav-tabs > li a {
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  border: none;
+}
+
+.tabs-parent .nav-tabs > li.active a,
+.tabs-parent .nav-tabs > li.active a:hover,
+.tabs-parent .nav-tabs > li.active a:focus {
+  background-color: transparent;
+  border: none;
+}
+
+.inputData {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.inputData .inputbutton {
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  background-color: #ff9e21;
+}
+
+.inputData .check {
+  margin-top: 5px;
+}
+
+.PhoneNum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.PhoneNum .mimakuan {
+  width: 100px;
+  padding: 0 5px;
+}
+
+.PhoneNum .phoneButton {
+  width: 180px;
+  height: 38px;
+  padding: 0 8px;
+  background-color: #ccc;
+}
+/*# sourceMappingURL=login.css.map */
