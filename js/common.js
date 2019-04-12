@@ -1,5 +1,5 @@
 $(function () {
-    
+
     // 动态扩展zepto方法
     $.extend($, {
         /**
@@ -21,6 +21,29 @@ $(function () {
                 queryObj[tempArr[0]] = tempArr[1];
             })
             return queryObj;
+        },
+        /**
+         * 使用正则验证号码
+         * @param {Number} phone 要验证的手机号码
+         */
+        checkPhone: function (phone) {
+            if (!(/^1[34578]\d{9}$/.test(phone))) {
+                return false;
+            } else {
+                return true;
+            }
+        },
+        /**
+         * 验证邮箱合法性
+         * @param {email} myemail 邮箱
+         */
+        checkEmail: function (myemail) {
+            var myReg = /^[a-zA-Z0-9_-]+@([a-zA-Z0-9]+\.)+(com|cn|net|org)$/;
+            if (myReg.test(myemail)) {
+                return true;
+            } else {
+                return false;
+            }
         }
     })
 })
