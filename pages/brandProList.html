@@ -43,8 +43,30 @@
                     </nav>
                     <div class="title">平板电视产品销量排行榜</div>
                     <ul class="mui-table-view brandProList">
-                       
+
                     </ul>
+                    <!-- <div class="mui-content-padded">
+                        <ul class="mui-pager">
+                            <li class="mui-previous">
+                                <a href="#">
+                                    上一页
+                                </a>
+                            </li>
+                            <li>
+                                <select name="" id="" value="1">
+                                    <option value="1">第1页</option>
+                                    <option value="2">第2页</option>
+                                    <option value="3">第3页</option>
+                                    <option value="4">第4页</option>
+                                </select>
+                            </li>
+                            <li class="mui-next">
+                                <a href="#">
+                                    下一页
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -68,7 +90,7 @@
 <script type="text/template" id="brandProTemp">
     {{each result value index}}
     <li class="mui-table-view-cell">
-            <a href="./brandComment.html?productid={{value.productId}}">
+            <a href="./baicaijia_pro.html?productid={{value.productId}}">
                 <div class="left">
                    {{@value.productImg}}
                 </div>
