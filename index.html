@@ -1,0 +1,134 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买-首页</title>
+    <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+
+
+    <!-- 1.0首页头部 -->
+    <header class="mmb_header">
+        <h1>
+            <a href="/index.html" id="Totop">
+                <i class="mmb_logo"></i>
+            </a>
+        </h1>
+        <a href="javascript:;" class="mmb_download">
+            <img src="./images/header_app.png" alt="">
+        </a>
+    </header>
+
+
+    <!-- 2.0搜索部分 -->
+    <form class="mmb_search">
+        <a href="javascript:;"></a>
+        <input type="search" name="" id="" placeholder="请输入搜索关键字" style="margin-bottom:0;">
+        <input type="button" name="" id="" value="搜索" >
+    </form>
+
+
+    <!-- 3.0标签部分 -->
+    <div class="mmb_nav">
+      <ul class="mmb_ul">
+      <!-- 占坑！！我是分类标签的数据 -->
+      </ul>
+    </div>
+
+
+    <!-- 4.0超值折扣推荐 -->
+      <div class="mma_zhekou clearfix">
+          <span>超值折扣推荐</span>
+          <span></span>
+      </div>
+      <!-- 商品详情 -->
+      <div class="mmb_product">
+          <div class="mmb_peoduct_details">
+              <ul class="mmd_ull">
+                 <!-- 占坑！！我是商品详情的数据 -->
+              </ul>
+          </div>
+      </div>
+
+    <!-- 点击加载更多 -->
+    <a class="bottonText" href="/pages/moneyctrl.html">更多优惠信息>></a>
+
+    <!-- 5.0底部 -->
+   <footer class="mmb_footer">
+    <h3>品牌排行<span class="turnRight"></span></h3>
+    <ul class="mmb_footer_tabbar">
+        <li><a href="javascript:;">登录</a></li>
+        <li><a href="javascript:;">注册</a></li>
+        <li> <span class="mui-icon  mui-icon-arrowthinup"></span> <a href="javascript:;">返回顶部</a></li>
+    </ul>
+    <div class="mmb_bottom_link">
+        <a href="javascript:;">手机APP下载</a>
+        <span>慢慢买手机版--掌上比价平台</span>
+        <p>m.manmanbuy.com</p>
+        <a class="mmb_footer_toTop"href="#Totop"></a>
+    </div>
+   </footer>
+
+
+  </body>
+
+<!-- 模板专区 -->
+
+
+<!-- 页面标签模板 -->
+<script type="text/template" id="Getindex">
+{{each result value index}}
+<li data-indexid="{{value.indexmenuId}}">
+  {{if index == 7}}
+  <a href="javascript:;">
+  {{@value.img}}
+  <p>{{value.name}}</p>
+  </a>
+  {{else}}
+  <a href="./pages/{{value.titlehref}}">
+      {{@value.img}}
+      <p>{{value.name}}</p>
+      </a>
+      {{/if}}
+</li>
+{{/each}}
+</script>
+<!-- 页面标签模板 -->
+
+
+
+
+<!-- 商品详情模板 -->
+<script type="text/template " id="Goodsdetail">
+{{each result value }}
+<li data-productId="{{value.productId}}">
+    <a href="javascript:;">
+       <div> {{@value.productImg2}}</div>
+        
+        <div class="comment">
+            <span>{{value.productName}} &nbsp  <i class="priceColor"> {{value.productPinkage}} </i></span>
+           
+            <span>
+              <i>{{value.productFrom}} &nbsp | &nbsp {{value.productTime}}</i>
+           
+          </span>
+        </div>
+    </a>
+</li>
+{{/each}}
+
+
+</script>
+<!-- 商品详情模板 -->
+
+
+  </html>
+  <script src="/js/index.js"></script>
+  <script src="/lib/arttemplate/template-web.js"></script>
