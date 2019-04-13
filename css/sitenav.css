@@ -32,6 +32,7 @@ body {
   width: 30%;
   height: 30px;
   border: 1px solid pink;
+  box-shadow: 2px 2px 2px #bbb;
   margin: 5px;
 }
 .layout .center .storeList li a {

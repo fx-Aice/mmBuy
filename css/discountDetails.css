@@ -19,6 +19,9 @@ body {
 .layout #header a {
   color: #fff;
 }
+.layout .mui-scroll-wrapper {
+  z-index: 0;
+}
 .layout .center {
   flex: 1;
   padding: 45px 0px 100px;
@@ -97,10 +100,10 @@ body {
 }
 .layout .footer > div:nth-of-type(1) {
   display: flex;
-  color: black;
   text-align: center;
 }
 .layout .footer > div:nth-of-type(1) a {
+  color: black;
   padding: 5px 0px;
   flex: 1;
   border: 1px solid #ccc;
