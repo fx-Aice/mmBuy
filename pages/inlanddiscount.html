@@ -1,19 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../lib/mui/css/mui.css">
     <link rel="stylesheet" href="../lib/mui/fonts/mui.ttf">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/inlanddiscount.css">
     <title>商品折扣页面</title>
 </head>
+
 <body>
-    商品折扣页面
+    <div class="layout">
+        <header id="header" class="mui-bar mui-bar-nav">
+            <h1 class="mui-title">国内折扣</h1>
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+            <a class="mui-icon mui-icon-download mui-pull-right"></a>
+        </header>
+        <!-- <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+               
+            </div>
+        </div> -->
+        <!--下拉刷新容器-->
+        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--数据列表-->
+                <div class="center">
+                    <ul class="mui-table-view mui-table-view-chevron goods_list">
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="footer">
+            <div>
+              <a href="#"><div>登录</div></a>
+              <a href="#"><div>注册</div></a>
+              <a href="#"><div><span calss=""></span> <img src="../images/top.jpg" alt="">返回顶部</div></a>
+            </div>
+            <div>
+                <span>手机App下载</span> <span>慢慢买手机版</span> <span>--掌上比价平台</span>
+                <p>manmanbuy.com</p>
+            </div>
+        </div>
+
+    </div>
 </body>
+<script type="text/template" id="goodsListTemp">
+    {{each result value index}}
+    <li>
+            <a href="http://127.0.0.1:5500/pages/discountDetails.html?productId={{value.productId}}" >
+                <div class="img_box">{{@value.productImg}}</div>
+                <div class="goods_txt mui-ellipsis-2">{{value.productName}}</div>
+                <p class="mui-ellipsis">{{value.productPrice}}</p>
+                <div class="goods_time"><span>{{value.productFrom}} | </span><span>{{value.productTime}}</span></div>
+            </a>
+    </li>
+  {{/each}}
+
+</script>
+<script src="../lib/arttemplate/template-web.js"></script>
 <script src="../lib/mui/js/mui.js"></script>
 <script src="../lib/iscroll/iscroll.js"></script>
 <script src="../lib/zepto/zepto.js"></script>
 <script src="../js/inlanddiscount.js"></script>
+
 </html>

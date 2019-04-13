@@ -4,15 +4,17 @@ $(function () {
         indicators: false //是否显示滚动条
     });
 
-    // 获取品牌列表
+    var id = $.getParameter(location.search);
+    console.log(id);
     $.ajax({
-        url: 'http://193.112.55.79:9090/api/getbrandtitle',
+        url: 'http://193.112.55.79:9090/api/getbrand',
         type: 'get',
+        data: id,
         dataType: 'json',
         success: function (result) {
             console.log(result);
-            var brndListHtml = template('brandListsTemp', result);
-            $('.brandLists').html(brndListHtml);
+            var brandDetailHtml = template('brandDetailTemp', result);
+            $('.brandDetail').html(brandDetailHtml);
         }
     })
 
@@ -20,8 +22,7 @@ $(function () {
     $('.closeBtn').on('tap', function () {
         $(this).parents('.app-promotion-bar').remove();
         $('.mui-scroll-wrapper').css({
-            "padding-bottom":0
+            "padding-bottom": 0
         })
     })
-
 })

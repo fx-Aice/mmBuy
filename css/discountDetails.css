@@ -1,0 +1,131 @@
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+}
+.layout {
+  display: flex;
+}
+.layout #header {
+  background-color: #ff841d;
+}
+.layout #header h1 {
+  color: #fff;
+}
+.layout #header a {
+  color: #fff;
+}
+.layout .mui-scroll-wrapper {
+  z-index: 0;
+}
+.layout .center {
+  flex: 1;
+  padding: 45px 0px 100px;
+  background-color: #f1f1f1;
+}
+.layout .center .banner {
+  width: 100%;
+  background-color: #fff;
+}
+.layout .center .banner img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+.layout .center .details_goods {
+  padding: 0 5px;
+}
+.layout .center .details_goods .details_txt {
+  font-size: 15px;
+}
+.layout .center .details_goods .details_price {
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  margin: 5px 0;
+}
+.layout .center .details_goods .details_time {
+  margin: 5px 0;
+  text-align: right;
+  font-size: 12px;
+  color: #aaa;
+}
+.layout .center .details_goods .details_des {
+  margin: 5px 0 ;
+  font-size: 14px;
+  color: #ff841d;
+}
+.layout .center .details_goods button {
+  margin: 0 10px;
+  width: 94%;
+  background-color: #ff841d;
+  color: #fff;
+}
+.layout .center .details_goods .qr {
+  margin: 10px 0 ;
+  width: 100%;
+}
+.layout .center .details_goods .qr img {
+  width: 100%;
+}
+.layout .center .comment {
+  color: #ff841d;
+  padding: 20px 0;
+  background-color: #fff;
+}
+.layout .center .comment #ctl00_ContentBody_txt_nr {
+  height: 200px;
+}
+.layout .center .comment .form {
+  position: relative;
+}
+.layout .center .comment .form .tjdp {
+  background-color: #ff841d;
+  outline: none;
+  border: none;
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+}
+.layout .footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: #eee;
+  font-size: 14px;
+}
+.layout .footer > div:nth-of-type(1) {
+  display: flex;
+  text-align: center;
+}
+.layout .footer > div:nth-of-type(1) a {
+  color: black;
+  padding: 5px 0px;
+  flex: 1;
+  border: 1px solid #ccc;
+}
+.layout .footer > div:nth-of-type(1) a:nth-of-type(2) {
+  border-left: none;
+  border-right: none;
+}
+.layout .footer > div:nth-of-type(1) a:nth-of-type(3) img {
+  width: 16px;
+}
+.layout .footer > div:nth-of-type(2) {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+.layout .footer > div:nth-of-type(2) span:nth-of-type(1) {
+  color: red;
+}
+.layout .footer > div:nth-of-type(2) span:nth-of-type(3) {
+  color: #666666;
+}
+.layout .footer > div:nth-of-type(2) p {
+  margin-bottom: 0px;
+}

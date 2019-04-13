@@ -1,0 +1,63 @@
+@import './brand.less';
+
+.brandProList{
+    width: 100%;
+    .mui-table-view-cell{
+        // width: 100%;
+        a{
+            width: 100%;
+            overflow: hidden;
+            .left{
+                width: 30%;
+                float: left;
+                img{
+                    width: 80%;
+                    display: block;
+                }
+            }
+            .right{
+               width: 70%;
+               float: left;
+               position: relative;
+               .proName{
+                   font-size: 14px;
+               }
+               .proPrice{
+                   font-size: 16px;
+                   color: #f00;
+                   font-weight: 600;
+                   margin-top: 10px;
+               }
+               .star{
+                   position: absolute;
+                   right: 0;
+                   bottom: 35px;
+                   font-size: 20px;
+                   color: @mainColor;
+               }
+               .comment{
+                   padding: 5px 5px;
+                   span{
+                       font-size: 11px;
+                       color: #999;
+                   }
+               }
+            }
+        }
+    }
+}
+.mui-pager{
+   display: flex;
+   text-align: center;
+   justify-content: space-around;
+   li{
+    select{
+        border: 1px solid #ccc;
+        height: 36px;
+        font-size: 12px;
+        option{
+            padding: 0;
+        }
+    }
+   }
+}

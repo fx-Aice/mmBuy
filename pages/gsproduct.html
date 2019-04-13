@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/mui/css/mui.css">
+    <link rel="stylesheet" href="../lib/mui/fonts/mui.ttf">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/gsproduct.css">
+    <title>商品折扣页面</title>
+</head>
+
+<body>
+    <div class="layout">
+        <header id="header" class="mui-bar mui-bar-nav">
+            <h1 class="mui-title">凑单品</h1>
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+            <a class="mui-icon mui-icon-download mui-pull-right"></a>
+        </header>
+        
+        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--数据列表-->
+                <div class="center">
+                   <div class="navs">
+                        <select class="stores">
+                                
+                        </select>
+
+                        <select class="area">
+
+                        </select>
+                        <select class="allPrice">
+                                <option value ="volvo">全部价格<span></span></option>
+                                <option value ="saab">Saab<span></span></option>
+                                <option value="opel">Opel<span></span></option>
+                                <option value="audi">Audi<span></span></option>
+                        </select>
+                        <span class="mui-icon mui-icon-list"></span>
+                   </div>
+                   <div class="goods_list">
+                       
+
+                   </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="footer">
+            <div>
+              <a href="#"><div>登录</div></a>
+              <a href="#"><div>注册</div></a>
+              <a href="#"><div><span calss=""></span> <img src="../images/top.jpg" alt="">返回顶部</div></a>
+            </div>
+            <div>
+                <span>手机App下载</span> <span>慢慢买手机版</span> <span>--掌上比价平台</span>
+                <p>manmanbuy.com</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script type='text/template' id="storesTemp">
+    {{each result value index}}
+    <option value ="{{value.shopId}}" >{{value.shopName}}</option>
+    {{/each}}
+   
+</script>
+<script type='text/template' id="areaTemp">
+    {{each result value index}}
+    <option class="aaa" value ="{{value.areaId}}" {{index == 0 ? 'selected' : ''}}  >{{value.areaName}}</option>
+    {{/each}}                                      
+</script>
+<script type='text/template' id="goodsTemp">
+    {{each  value index}}
+    <li><a href="javasctipt:;">
+            <div><img src="../images/haitao.png" alt=""></div>
+            <div>我是介绍</div>
+            <div><span>￥99元</span>
+             <button>购买</button></div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script type='text/template' id="goodsListTemp">
+                    <ul>        
+                        {{each result value index}}                
+                          <li>
+                              <a href="javasctipt:;">
+                              <div><img src="{{value.productImg}}" alt=""></div>
+                              <div class="mui-ellipsis-2">{{value.productName}}</div>
+                              <div>
+                                    <span>{{value.productPrice}}</span>
+                                    <button>购买</button>
+                              </div>
+                              
+                              </a>
+                       </li>
+                       {{/each}}
+                          
+                      </ul>
+</script>
+
+<script src="../lib/arttemplate/template-web.js"></script>
+<script src="../lib/mui/js/mui.js"></script>
+<script src="../lib/iscroll/iscroll.js"></script>
+<script src="../lib/zepto/zepto.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/gsproduct.js"></script>
+
+</html>
