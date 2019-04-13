@@ -1,0 +1,166 @@
+@import '../css/normalize.less';
+
+/* 全局 */
+.layout {
+    width: 100vw;
+    height: 100vh;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    // overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* 头部样式 */
+.mm_header {
+    background-color: orange;
+
+    >h1 {
+        color: #fff;
+    }
+
+    >.mui-action-back {
+        color: #fff;
+    }
+
+    >a:nth-of-type(2) {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+
+        div:nth-of-type(1) {
+            font-size: 26px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        div:nth-of-type(2) {
+            font-size: 12px;
+        }
+    }
+}
+
+/* 主体 滑动商品列表 */
+.mm_content {
+    flex: 1;
+    margin-top: 44px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    >.mm_goodsList {
+        width: 100%;
+
+        /* 单个商品 */
+        >.mm_sg_goods {
+            display: flex;
+            margin: 15px;
+
+            .mm_goodsImg {
+                display: block;
+                width: 25%;
+                margin-right: 10px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            /* 商品信息 */
+            .mm_goodsMsg {
+                flex: 1;
+
+                .mm_goods_name {
+                    font-size: 12px;
+                    line-height: 12px;
+                    color: #000;
+
+                    .mm_goods_pinkage {
+                        color: #f00;
+                    }
+                }
+
+
+                .mm_goods_where {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    a,
+                    span {
+                        font-size: 10px;
+                        color: #ccc;
+                    }
+
+                    .mm_lines {
+                        margin: 0 5px;
+                        border-right: 1px solid #ccc;
+                    }
+
+                    .mm_goods_comment {
+                        line-height: 3;
+                        font-size: 10px;
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/* 尾部样式 */
+.mm_footer {
+    width: 100%;
+
+    ul {
+        margin: 0;
+        padding: 15px 0;
+        background-color: #fff;
+    }
+
+    .mm_ok {
+        display: flex;
+        border-top: 1px solid #999;
+        border-bottom: 1px solid #999;
+
+        a {
+            color: #000;
+            padding: 10px 30px;
+            text-align: center;
+        }
+
+        .mm_login {
+            width: 30%;
+        }
+
+        .mm_count {
+            flex: 1;
+        }
+
+        a:nth-of-type(-n+2) {
+            border-right: 1px solid #999;
+        }
+
+        .mm_goTop {
+            width: 40%;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    }
+
+    .mm_msg {
+        padding: 10px 50px;
+        font-size: 14px;
+
+        span:nth-of-type(odd) {
+            color: #f00;
+        }
+
+        div {
+            text-align: center;
+        }
+    }
+}
