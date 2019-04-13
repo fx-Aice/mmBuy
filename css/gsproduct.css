@@ -32,23 +32,23 @@ body {
   display: flex;
 }
 .layout .mui-scroll-wrapper .center .navs .stores {
-  flex: 4;
+  flex: 2 ;
   text-align: center;
 }
 .layout .mui-scroll-wrapper .center .navs .stores option {
   font-size: 12px;
 }
 .layout .mui-scroll-wrapper .center .navs .area {
-  flex: 2;
+  flex: 1;
 }
 .layout .mui-scroll-wrapper .center .navs .area option {
   font-size: 12px;
 }
 .layout .mui-scroll-wrapper .center .navs .allPrice {
-  flex: 5;
+  flex: 4;
 }
 .layout .mui-scroll-wrapper .center .navs span {
-  flex: 2;
+  flex: 1 ;
   margin-left: 5px;
   margin-top: 10px;
 }
