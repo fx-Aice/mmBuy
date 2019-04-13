@@ -13,6 +13,7 @@
             width: 100%;
             background-color: #F4483E;
 
+
             h1,
             a,
             div {
@@ -30,7 +31,6 @@
                     font-size: 26px;
                     text-align: center;
                 }
-
             }
 
             >a:nth-of-type(1) {
@@ -41,13 +41,59 @@
     }
 
     >.content {
+
         flex: 1;
-        padding-top: 30px;
-        margin-bottom: 50px;
         position: relative;
 
+        .nav {
+            padding: 5px 0;
+            width: 100%;
+            font-size: 15px;
+            text-align: center;
+            color: #666;
+        }
 
+        .pro_list {
+            >li {
+                width: 100%;
+                padding: 0;
+                >a {
+                    padding: 15px 5px;
+                    width: 100%;
+                    margin: 0;
 
+                    >img {
+                        float: left;
+                        width: 40%;
+                    }
+
+                    >.right {
+                        padding: 0 10px;
+                        float: right;
+                        width: 60%;
+                        >div {
+                            line-height: 50px;
+                        }
+
+                        >div:nth-of-type(1) {
+                            width: 100%;
+                            // overflow: hidden;
+                            line-height: 20px;
+                        }
+                        >div:nth-of-type(3){
+                            color: orange;
+                        }
+                    }
+                }
+
+            }
+        }
+        .mui-navigate-right:after, 
+        .mui-push-left:after, 
+        .mui-push-right:after{
+            font-size: 30px;
+            right: 10px;
+        }
     }
 
     >.footer {
@@ -92,6 +138,27 @@
     }
 
 
+}
 
-
+// 遮罩板
+.mui-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    background-color: rgba(0,0,0,.3);
+    >.banner{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        text-align: center;
+        .mui-slider-group 
+        .mui-slider-item 
+        img{
+            width: 60%;
+        }
+    }
 }
