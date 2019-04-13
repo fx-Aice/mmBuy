@@ -29,30 +29,6 @@ $(function () {
     })
 
   
-
-
-
-    var shopId
-    var areaId
-
-    $('.stores').on('change', function () {
-
-        shopId = $(this).val()
-        $('.area').on('change', function () {
-            areaId = $(this).val();
-            gainData(shopId, areaId)
-        })
-
-
-    })
-
-
-
-
-
-
-
-
     gainData()
 
     //渲染商品列表
@@ -77,6 +53,22 @@ $(function () {
 
     }
 
+
+    
+    var shopId
+    var areaId
+
+    $('.stores').on('change', function () {
+
+        shopId = $(this).val()
+        
+        $('.area').on('change', function () {
+            areaId = $(this).val();
+            gainData(shopId, areaId)
+        })
+
+
+    })
 
 
 
