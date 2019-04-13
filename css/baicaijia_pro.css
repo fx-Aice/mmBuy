@@ -91,6 +91,7 @@
 }
 .layout > .content .pro_xiangqing .pingjia > .content {
   padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 .layout > .content .pro_xiangqing .pingjia > .content > .nav {
   display: flex;
