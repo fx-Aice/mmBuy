@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>评论详情</title>
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../lib/mui/css/muie.css">
+    <link rel="stylesheet" href="../lib/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/pagination.css">
+    <link rel="stylesheet" href="../css/moneyctrl.css">
+    <link rel="stylesheet" href="../css/goods_comment.css">
+</head>
+
+<body>
+    <div class="layout">
+        <!-- 头部 -->
+        <header id="header" class="mui-bar mui-bar-nav mm_header">
+            <h1 class="mui-title">省钱控-最新优惠</h1>
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:;"></a>
+            <a class="mui-pull-right" href="javascript:;">
+                <div class="mui-icon mui-icon-download "></div>
+                <div>APP下载</div>
+            </a>
+        </header>
+
+        <!-- 主体 -->
+        <div class="mm_content">
+
+
+        </div>
+
+
+        <!-- 尾部 -->
+        <div class="mm_footer">
+            <!-- 三合一功能 -->
+            <div class="mm_ok">
+                <a class="mm_login" href="#">登录</a>
+                <a class="mm_count" href="#">注册</a>
+                <a class="mm_goTop mui-icon-extra mui-icon-extra-top" href="#"></a>
+            </div>
+            <div class="mm_msg">
+                <span>手机APP下载</span>
+                <span>慢慢买手机版</span>
+                <span>--掌上比价平台</span>
+                <div>m.manmanbug.com</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/template" id="commentTemp">
+        
+        <div class="mm_goods_name">{{productName}}</div>
+        <div class="mm_goods_tt">{{productTime}} {{productTips}}</div>
+        <div class="mm_db_img">
+            <div class="smg">{{@productImgSm}}</div>
+            <div class="bmg">{{@productImg2}}</div>
+        </div>
+        <a href="javascript:;" class="mm_buy">前往购买</a>
+        <div class="mm_img"><img src="../images/mmbweixin2.png" alt=""></div>
+        {{@productComment}}
+        
+    </script>
+    
+    <script src="../lib/zepto/zepto.js"></script>
+    <script src="../lib/mui/js/mui.min.js"></script>
+    <script src="../lib/arttemplate/template-web.js"></script>
+    <script src="../js/pagination.js"></script>
+    <script src="../js/moneyctrl.js"></script>
+    <script src="../js/goods_comment.js"></script>
+</body>
+
+</html>
