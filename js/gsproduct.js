@@ -11,6 +11,8 @@ $(function () {
         success: function (result) {
             var goodsHtml = template('storesTemp', result)
             $('.stores').html(goodsHtml)
+
+
         }
 
     })
@@ -28,7 +30,7 @@ $(function () {
         }
     })
 
-  
+
     gainData()
 
     //渲染商品列表
@@ -45,30 +47,43 @@ $(function () {
             success: function (result) {
                 var goodsListHtml = template('goodsListTemp', result)
                 $('.goods_list').html(goodsListHtml)
-
-
-
             }
         })
 
     }
 
-
-    
-    var shopId
-    var areaId
-
     $('.stores').on('change', function () {
-
-        shopId = $(this).val()
-        
-        $('.area').on('change', function () {
-            areaId = $(this).val();
-            gainData(shopId, areaId)
-        })
-
-
+        var shopId = $(this).val()
+        var areaId = $('.area').val();
+        // console.log(shopId,areaId);      
+        gainData(shopId, areaId)
     })
+    $('.area').on('change', function () {
+        var shopId = $('.stores').val()
+        var areaId = $(this).val();
+        // console.log(shopId,areaId);     
+        gainData(shopId, areaId)
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

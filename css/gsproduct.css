@@ -33,6 +33,7 @@ body {
 }
 .layout .mui-scroll-wrapper .center .navs .stores {
   flex: 4;
+  text-align: center;
 }
 .layout .mui-scroll-wrapper .center .navs .stores option {
   font-size: 12px;
