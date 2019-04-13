@@ -46,6 +46,87 @@
         margin-bottom: 50px;
         position: relative;
 
+        .pro_xiangqing {
+            .pro_title {
+                margin-top: 20px;
+                width: 100%;
+                padding: 10px 20px;
+                text-align: center;
+            }
+            .mui-content{
+                color: #ffffff;
+                background-color: #FFC21B;
+                .mui-segmented-control {
+                    border: 1px solid #E88116;
+                    
+                }
+    
+                .mui-segmented-control .mui-control-item.mui-active {
+                    background-color: #E88116;
+                }
+    
+                .mui-segmented-control .mui-control-item:nth-of-type(1) {
+                    border: none;
+                }
+    
+                .mui-segmented-control .mui-control-item {
+                    border-left: 1px solid #E88116;
+                    color: #fff;
+                }
+            }
+            .pro_img {
+                text-align: center;
+                padding: 20px 0;
+                position: relative;
+            }
+            .pro_img::before{
+                content: "收藏";
+                font-size: 14px;
+                text-align: center;
+                color: #fff;
+                line-height: 50px;
+                border-radius: 50%;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                width: 50px;
+                height: 50px;
+                background-color: #8BC800;
+            }
+            table{
+                margin: 15px 0;
+            }
+            .pingjia{
+                >.tiltle{
+                    height: 44px;
+                    background-color: #ccc;
+                    text-align: center;
+                    line-height: 44px;
+                }
+                >.content{
+                    padding: 10px;
+                    >.nav{
+                        display: flex;
+                        justify-content: space-between;
+                        >.left{
+                            font-size: 13px;
+                            color:#666;
+                        }
+                        >.right{
+                            font-size: 13px;
+                            color: #666;
+                            text-align: right;
+                        }
+                        
+                    }
+                    >.wenzi{
+                        text-indent: 2em;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            
+        }
 
 
     }
